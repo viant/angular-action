@@ -1,0 +1,9 @@
+name: 'Angular Action'
+description: 'Run Angular commands'
+author: '@replicant0wnz'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'box'
+  color: 'blue'
