@@ -3,7 +3,7 @@ description: 'Run Angular commands'
 author: '@replicant0wnz'
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: 'Dockerfile.action'
 branding:
   icon: 'box'
   color: 'blue'
