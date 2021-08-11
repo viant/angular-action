@@ -16,5 +16,7 @@ RUN apt-get -y install google-chrome-stable
 
 COPY entrypoint.sh /entrypoint.sh
 
+USER 1001:1001
+
 ENTRYPOINT ["/entrypoint.sh"]
 CMD [""]
