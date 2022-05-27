@@ -1,4 +1,4 @@
-FROM node
+FROM node:18.1
 
 RUN npm install -g @angular/cli
 
