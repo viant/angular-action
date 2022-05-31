@@ -3,7 +3,7 @@ FROM node:18.1
 RUN npm install -g @angular/cli
 
 RUN apt-get -y update
-RUN apt-get -y install zip gettext-base
+RUN apt-get -y install zip
 
 RUN JQ_URL="https://circle-downloads.s3.amazonaws.com/circleci-images/cache/linux-amd64/jq-latest" \
   && curl --silent --show-error --location --fail --retry 3 --output /usr/bin/jq $JQ_URL \
@@ -15,6 +15,8 @@ RUN apt-get -y update
 RUN apt-get -y install google-chrome-stable
 
 COPY entrypoint.sh /entrypoint.sh
+
+USER 1001:1001
 
 ENTRYPOINT ["/entrypoint.sh"]
 CMD [""]
