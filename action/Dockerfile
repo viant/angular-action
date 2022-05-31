@@ -1,1 +1,1 @@
-FROM gcr.io/viant-images/actions/angular:latest
+FROM gcr.io/viant-images/actions/angular:873835e
