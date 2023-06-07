@@ -1,2 +1,2 @@
-FROM gcr.io/viant-images/actions/angular:996804a
+FROM gcr.io/viant-images/actions/angular:c74eb65
 USER root
